@@ -1,0 +1,145 @@
+.nav{
+  background: $mainColor;
+  color: #fff;
+  width: 100%;
+  min-height: 55px;
+  position: absolute;
+  z-index: 10;
+  a{
+    color: #fff;
+    display: inline-block;
+    padding: 15px 10px;
+    text-align: center;
+    width: 100%;
+    @include rem(font-size, 1.6rem);
+  }
+}
+
+/*! responsive-nav.js 1.0.34 by @viljamis */
+
+.nav-collapse{
+  background: rgb(214, 11, 82);
+  ul {
+    margin: 0;
+    width: 100%;
+    display: block;
+    list-style: none;
+    padding: 25px 0 10px;
+  }
+  li {
+    width: 100%;
+    display: block;
+    position: relative;
+    transition: all linear .2s;
+    &:hover{
+      background: #E50756;
+    }
+    &:after{
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 15px;
+      right: 15px;
+      -webkit-box-shadow: 0 1px #BD0E4C;
+      box-shadow: 0 1px #BD0E4C;
+      height: 0;
+      border-bottom: 1px solid #D60B52;
+    }
+  }
+}
+.nav-menu{
+  position: relative;
+  min-height: 65px;
+}
+
+.js .nav-collapse {
+  clip: rect(0 0 0 0);
+  max-height: 0;
+  position: absolute;
+  display: block;
+  overflow: hidden;
+  zoom: 1;
+}
+
+.nav-collapse.opened {
+  max-height: 9999px;
+}
+
+.nav .nav-toggle {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-indent: -9999px;
+  background: url('../images/menu.png') 0 0 no-repeat;
+  width: 25px;
+  height: 20px;
+  padding: 0;
+  position: relative;
+  top: 16px;
+  left: 10px;
+  z-index: 10;
+}
+
+/* FROM 468 */
+
+@include breakpoint(extrasmall){
+
+
+}
+
+/* FROM 768 */
+@include breakpoint(small){
+
+  .nav-menu{
+    position: static;
+  }
+  .nav-collapse ul{
+    padding: 0;
+    li:hover{
+      background: $mainColor;
+    }
+    li:after{
+      display: none;
+    }
+    li {
+      width: auto;
+      display: inline-block;
+    }
+  }
+  .nav{
+    position: static;
+  }
+  .nav nav a{
+    width: auto;
+    padding: 18px 6px;
+    @include rem(font-size, 1.4rem);
+    &:hover{
+      color: #FFBFBF;
+    }
+  }
+  .js .nav-collapse {
+    position: relative;
+  }
+  .js .nav-collapse.closed {
+    max-height: none;
+  }
+  .nav .nav-toggle {
+    display: none;
+  }
+
+}
+@include breakpoint(medium){
+  .nav nav a{
+    padding: 18px;
+    @include rem(font-size, 1.6rem);
+  }
+}
+@include breakpoint(lg){
+  .nav nav a{
+    @include rem(font-size, 1.8rem);
+  }
+}
+

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+    <title>Susy - gulp - framework</title>
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet" type="text/css">
+    <!--build:css  styles/main.min.css-->
+    <link rel="stylesheet" href="styles/main.css">
+    <!--/build -->
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="scripts/modernizr.js"></script>
+</head>
+<body>
+<!--[if lt IE 9]>
+<p class="browsehappy">Похоже, вы используете устаревшую версию Internet Explorer.
+    <a href="http://browsehappy.com/">
+        Пожалуйста, попробуйте другой браузер, чтобы получить более полное впечатление о работе в сети.
+    </a>
+</p>
+<![endif]-->
+
+<div class="container">
+    //= nav.html
+    //= main-form.html
+    //= call-form.html
+</div>
+
+<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<!--build:js  scripts/main.min.js-->
+<script src="./../dist/scripts/main.js"></script>
+<!--/build -->
+<!--build:remove -->
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+<!--/build-->
+</body>
+</html>

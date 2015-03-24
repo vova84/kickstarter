@@ -1,0 +1,105 @@
+.times{
+  font-family: Times New Roman, Times, serif;
+}
+
+/* paragraphs */
+
+p{
+  @include rem(font-size, 1.4*$fs-p);
+}
+
+/* headers */
+
+h1{
+  @include rem(font-size, 3*$fs-h1);
+}
+h2{
+  @include rem(font-size, 2.5*$fs-h2);
+}
+h3{
+  @include rem(font-size, 2*$fs-h3);
+}
+h4{
+  @include rem(font-size, 1.5*$fs-h4);
+}
+h5{
+  @include rem(font-size, 1*$fs-h5);
+}
+
+
+/* FROM 468 */
+@include breakpoint(extrasmall){
+
+}
+/* FROM 768 */
+@include breakpoint(small){
+  html{
+    line-height: 1.5;
+  }
+  p{
+    @include rem(font-size, 1.6*$fs-p);
+  }
+  h1{
+    @include rem(font-size, 3.5*$fs-h1);
+  }
+  h2{
+    @include rem(font-size, 3.2*$fs-h2);
+  }
+  h3{
+    @include rem(font-size, 2.6*$fs-h3);
+  }
+  h4{
+    @include rem(font-size, 1.8*$fs-h4);
+  }
+  h5{
+    @include rem(font-size, 1.2*$fs-h5);
+  }
+}
+/* FROM 992 */
+@include breakpoint(medium){
+  html{
+    line-height: 1.6;
+  }
+  p{
+    @include rem(font-size, 1.7*$fs-p);
+  }
+  h1{
+    @include rem(font-size, 3.8*$fs-h1);
+  }
+  h2{
+    @include rem(font-size, 3.4*$fs-h2);
+  }
+  h3{
+    @include rem(font-size, 2.8*$fs-h3);
+  }
+  h4{
+    @include rem(font-size, 2*$fs-h4);
+  }
+  h5{
+    @include rem(font-size, 1.4*$fs-h5);
+  }
+}
+/* FROM 1200 */
+@include breakpoint(large){
+  html{
+    line-height: 1.7;
+  }
+  p{
+    @include rem(font-size, 1.8*$fs-p);
+  }
+  h1{
+    @include rem(font-size, 4*$fs-h1);
+  }
+  h2{
+    @include rem(font-size, 3.6*$fs-h2);
+  }
+  h3{
+    @include rem(font-size, 3*$fs-h3);
+  }
+  h4{
+    @include rem(font-size, 2.5*$fs-h4);
+  }
+  h5{
+    @include rem(font-size, 1.8*$fs-h5);
+  }
+}

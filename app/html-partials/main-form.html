@@ -1,0 +1,65 @@
+<section class="col-24 col-13-md inline">
+    <div class="form-wrap">
+        <div class="form-inner">
+            <h3 class="fs-36 text-center mb-50">Закажите площадку</h3>
+            <form class="main-form" action="">
+                <p>
+                    <label class="fs-16" for="startDate">Даты проведения: c</label>
+                    <input class="form-field" name="startDate" id="startDate" type="text"/>
+                    <label class="fs-16" for="endDate">по</label>
+                    <input class="form-field" name="endDate" id="endDate" type="text"/>
+                </p>
+                <div class="checkbox-container">
+                    <span class="checkbox-sign fs-16">Тип мероприятия:</span>
+                    <div class="checkbox-wrap">
+                        <div class="checkbox active"></div>
+                        <label class="fs-16" for="exhibition">Выставка</label>
+                        <input name="exhibition" id="exhibition" checked type="checkbox"/>
+                    </div>
+                    <div class="checkbox-wrap">
+                        <div class="checkbox"></div>
+                        <label class="fs-16" for="conference">Конференция</label>
+                        <input name="conference" id="conference" type="checkbox"/>
+                    </div>
+                </div>
+                <p>
+                    <label class="fs-16" for="area">Площадь:</label>
+                    <input class="form-field" name="area" id="area" type="text"/>
+                </p>
+                <p>
+                    <label class="fs-16" for="name">Ваше имя:</label>
+                    <input class="form-field" name="name" id="name" type="text"/>
+                </p>
+                <p>
+                    <label class="fs-16" for="company">Название компании:</label>
+                    <input class="form-field" name="company" id="company" type="text"/>
+                </p>
+                <p>
+                    <label class="fs-16" for="phone">Телефон:</label>
+                    <input class="form-field" name="phone" id="phone" type="text"/>
+                </p>
+                <p>
+                    <label class="fs-16" for="email">E-mail:</label>
+                    <input class="form-field" name="email" id="email" type="text"/>
+                </p>
+                <p>
+                    <label class="fs-16" for="textarea">Ваши пожелания:</label>
+                    <textarea rows="1" name="textarea" id="textarea"></textarea>
+                </p>
+                <div data-server="error" class="server-msg server-error hide">
+                    Нет ответа от сервера. Ошибка отправки сообщения.
+                </div>
+                <div data-server="success" class="server-msg server-success hide">
+                    Данные успешно отправлены!
+                </div>
+                <div class="btn-container">
+                    <div class="btn-wrap">
+                        <button id="send-mail" class="btn  send-mail">Отправить</button>
+                        <div class="ajax-loader hide"></div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</section>

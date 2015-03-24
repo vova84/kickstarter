@@ -1,0 +1,48 @@
+/* call-form */
+
+.call-form{
+
+  .btn-container{
+
+  }
+  .server-error{
+    background: red;
+    color: #fff;
+  }
+  .server-success{
+    background: green;
+    color: #fff;
+  }
+}
+
+
+/* TO 467 */
+@include breakpoint(fromsupersmall){
+  .call-form{
+    input{
+      width: 100%;
+    }
+  }
+}
+
+/* FROM 468 */
+@include breakpoint(extrasmall){
+
+}
+
+/* FROM 768 */
+@include breakpoint(small){
+  .call-form{
+
+  }
+}
+
+/* FROM 992 */
+@include breakpoint(medium){
+
+}
+
+/* FROM 1200 */
+@include breakpoint(large){
+
+}

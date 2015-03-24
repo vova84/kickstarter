@@ -1,0 +1,51 @@
+/* common */
+
+.btn{
+  display: inline-block;
+  vertical-align: middle;
+  padding: 10px 30px;
+  font-size: 16px;
+  border: 0;
+  box-shadow: none;
+  transition: all linear .2s;
+}
+
+.btn-wrap{
+  position: relative;
+  display: inline-block;
+}
+
+/* call-form button */
+.call-send{
+  background-color: $mainColor;
+  color: #fff;
+  &:hover {
+    background-color: $secondColor;
+  }
+}
+
+/* main-form button */
+.send-mail{
+  background-color: $mainColor;
+  color: #fff;
+  &:hover {
+    background-color: $secondColor;
+  }
+}
+
+/* FROM 480 */
+@include breakpoint(extrasmall){
+
+}
+/* FROM 768 */
+@include breakpoint(small){
+
+}
+/* FROM 992 */
+@include breakpoint(medium){
+
+}
+/* FROM 1200 */
+@include breakpoint(large){
+
+}

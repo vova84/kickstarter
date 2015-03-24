@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+    <title>Susy - gulp - framework</title>
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet" type="text/css">
+    <!--build:css  styles/main.min.css-->
+    <link rel="stylesheet" href="styles/main.css">
+    <!--/build -->
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="scripts/modernizr.js"></script>
+</head>
+<body>
+<!--[if lt IE 9]>
+<p class="browsehappy">Похоже, вы используете устаревшую версию Internet Explorer.
+    <a href="http://browsehappy.com/">
+        Пожалуйста, попробуйте другой браузер, чтобы получить более полное впечатление о работе в сети.
+    </a>
+</p>
+<![endif]-->
+
+<div class="container">
+    <div class="row">
+        <div class="col-24 nav-menu clearfix">
+            <div class="nav">
+                <nav class="nav-collapse">
+                    <ul>
+                        <li><a id="about" href="#">О компании</a></li>
+                        <li><a id="square" href="#">Заказ площадки</a></li>
+                        <li><a id="price" href="#">Cтоимость</a></li>
+                        <li><a id="why" href="#">Почему мы</a></li>
+                        <li><a id="contact" href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <section class="col-24 col-13-md inline">
+        <div class="form-wrap">
+            <div class="form-inner">
+                <h3 class="fs-36 text-center mb-50">Закажите площадку</h3>
+                <form class="main-form" action="">
+                    <p>
+                        <label class="fs-16" for="startDate">Даты проведения: c</label>
+                        <input class="form-field" name="startDate" id="startDate" type="text"/>
+                        <label class="fs-16" for="endDate">по</label>
+                        <input class="form-field" name="endDate" id="endDate" type="text"/>
+                    </p>
+                    <div class="checkbox-container">
+                        <span class="checkbox-sign fs-16">Тип мероприятия:</span>
+                        <div class="checkbox-wrap">
+                            <div class="checkbox active"></div>
+                            <label class="fs-16" for="exhibition">Выставка</label>
+                            <input name="exhibition" id="exhibition" checked type="checkbox"/>
+                        </div>
+                        <div class="checkbox-wrap">
+                            <div class="checkbox"></div>
+                            <label class="fs-16" for="conference">Конференция</label>
+                            <input name="conference" id="conference" type="checkbox"/>
+                        </div>
+                    </div>
+                    <p>
+                        <label class="fs-16" for="area">Площадь:</label>
+                        <input class="form-field" name="area" id="area" type="text"/>
+                    </p>
+                    <p>
+                        <label class="fs-16" for="name">Ваше имя:</label>
+                        <input class="form-field" name="name" id="name" type="text"/>
+                    </p>
+                    <p>
+                        <label class="fs-16" for="company">Название компании:</label>
+                        <input class="form-field" name="company" id="company" type="text"/>
+                    </p>
+                    <p>
+                        <label class="fs-16" for="phone">Телефон:</label>
+                        <input class="form-field" name="phone" id="phone" type="text"/>
+                    </p>
+                    <p>
+                        <label class="fs-16" for="email">E-mail:</label>
+                        <input class="form-field" name="email" id="email" type="text"/>
+                    </p>
+                    <p>
+                        <label class="fs-16" for="textarea">Ваши пожелания:</label>
+                        <textarea rows="1" name="textarea" id="textarea"></textarea>
+                    </p>
+                    <div data-server="error" class="server-msg server-error hide">
+                        Нет ответа от сервера. Ошибка отправки сообщения.
+                    </div>
+                    <div data-server="success" class="server-msg server-success hide">
+                        Данные успешно отправлены!
+                    </div>
+                    <div class="btn-container">
+                        <div class="btn-wrap">
+                            <button id="send-mail" class="btn  send-mail">Отправить</button>
+                            <div class="ajax-loader hide"></div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    
+    </section>
+    <form class="call-form" action="">
+        <p class="mb-30">
+            <label class="inline" for="call-name">
+                Ваше имя
+            </label>
+            <input class="col-18-sm form-field inline" id="call-name" name="call-name" type="text"/>
+        </p>
+        <p class="mb-30">
+            <label class="inline" for="call-company">
+                Компания
+            </label>
+            <input class="col-19-sm form-field inline" id="call-company" name="call-company" type="text"/>
+        </p>
+        <p class="mb-30">
+            <label class="col-5-sm inline" for="call-phone">
+                Телефон
+            </label>
+            <input class="col-19-sm form-field inline" id="call-phone" name="call-phone" type="text"/>
+        </p>
+        <div data-server="error" class="server-msg server-error hide">
+            Нет ответа от сервера. Ошибка отправки сообщения.
+        </div>
+        <div data-server="success" class="server-msg server-success hide">
+            Данные успешно отправлены!
+        </div>
+        <div class="btn-container">
+            <div class="btn-wrap">
+                <button id="call-send" class="btn call-send">Отправить</button>
+                <div class="ajax-loader hide"></div>
+            </div>
+        </div>
+    </form>
+</div>
+
+<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<!--build:js  scripts/main.min.js-->
+<script src="./../dist/scripts/main.js"></script>
+<!--/build -->
+<!--build:remove -->
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+<!--/build-->
+</body>
+</html>

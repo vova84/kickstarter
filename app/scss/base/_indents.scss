@@ -1,0 +1,116 @@
+/* margins */
+.m-80{
+  @include rem('margin-top', 4rem);
+  @include rem('margin-bottom', 4rem);
+}
+.mb-80{
+  @include rem('margin-bottom', 4rem);
+}
+.mb50 {
+  @include rem('margin-bottom', 2rem);
+}
+.mb-30{
+  @include rem('margin-bottom', 2rem);
+}
+
+/* paddings */
+.p-80{
+  @include rem('padding-top', 4rem);
+  @include rem('padding-bottom', 4rem);
+}
+
+/* TO 467 */
+@include breakpoint(fromsupersmall){
+
+}
+
+/* FROM 468 */
+@include breakpoint(extrasmall){
+  /* paddings */
+  .p-80{
+    @include rem('padding-top', 5rem);
+    @include rem('padding-bottom', 5rem);
+  }
+  /* margins */
+  .m-80{
+    @include rem('margin-top', 5rem);
+    @include rem('margin-bottom', 5rem);
+  }
+  .mb-80{
+    @include rem('margin-bottom', 5rem);
+  }
+  .mb-50{
+    @include rem('margin-bottom', 3rem);
+  }
+  .mb-30{
+    @include rem('margin-bottom', 2.4rem);
+  }
+}
+
+/* FROM 768 */
+@include breakpoint(small){
+  /* paddings */
+  .p-80{
+    @include rem('padding-top', 7rem);
+    @include rem('padding-bottom', 7rem);
+  }
+  /* margins */
+  .m-80{
+    @include rem('margin-top', 7rem);
+    @include rem('margin-bottom', 7rem);
+  }
+  .mb-80{
+    @include rem('margin-bottom', 7rem);
+  }
+  .mb-50{
+    @include rem('margin-bottom', 4rem);
+  }
+  .mb-30{
+    @include rem('margin-bottom', 2.7rem);
+  }
+}
+
+/* FROM 768 */
+@include breakpoint(medium){
+  /* paddings */
+  .p-80{
+    @include rem('padding-top', 7.5rem);
+    @include rem('padding-bottom', 7.5rem);
+  }
+  /* margins */
+  .m-80{
+    @include rem('margin-top', 7.5rem);
+    @include rem('margin-bottom', 7.5rem);
+  }
+  .mb-80{
+    @include rem('margin-bottom', 7.5rem);
+  }
+  .mb-50{
+    @include rem('margin-bottom', 4.5rem);
+  }
+  .mb-30{
+    @include rem('margin-bottom', 2.8rem);
+  }
+}
+/* FROM 1200 */
+@include breakpoint(lg){
+  /* paddings */
+  .p-80{
+    @include rem('padding-top', 8rem);
+    @include rem('padding-bottom', 8rem);
+  }
+  /* margins */
+  .m-80{
+    @include rem('margin-top', 8rem);
+    @include rem('margin-bottom', 8rem);
+  }
+  .mb-80{
+    @include rem('margin-bottom', 8rem);
+  }
+  .mb-50{
+    @include rem('margin-bottom', 5rem);
+  }
+  .mb-30{
+    @include rem('margin-bottom', 3rem);
+  }
+}

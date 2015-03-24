@@ -1,0 +1,114 @@
+.last, .container .last{
+  @include last;
+}
+
+/* for ie8 browserhappy block styles */
+
+.browsehappy{margin:.2em 0;background:#ccc;color:#000;padding:.2em 0}
+
+/* text-align */
+.text-right{
+  text-align: right;
+}
+.text-center{
+  text-align: center;
+}
+.text-left{
+  text-align: left;
+}
+.centered, .container .centered{
+  margin-left: auto;
+  margin-right: auto;
+  float: none!important;
+}
+
+/* font-styles */
+.bold{
+  font-weight: 700;
+}
+.italic{
+  font-style: italic;
+}
+
+/* others */
+.inline, .container .inline{
+  float: none;
+  display: inline-block;
+  margin-right: -2px;
+  &.last{
+    float: none;
+  }
+}
+.clearfix{
+  &:before, &:after{
+    display: table;
+    content: '';
+  }
+  &:after{
+    clear: both;
+  }
+}
+.hide{
+  display: none!important;
+}
+.uppercase{
+  text-transform: uppercase;
+}
+
+/* ajax-loaders */
+
+.ajax-loader {
+  background: url("../images/ajax-loader.gif") 0 0 no-repeat;
+  width: 45px;
+  height: 45px;
+  background-size: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* server errors and success */
+
+.server-error{
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.server-success{
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.error-field{
+  color: red;
+}
+
+.server-msg{
+  @include rem('font-size', 1.4rem);
+}
+
+/* FROM 480 */
+@include breakpoint(extrasmall){
+}
+/* FROM 768 */
+@include breakpoint(small){
+  .server-msg{
+    @include rem('font-size', 1.6rem);
+  }
+}
+/* FROM 992 */
+@include breakpoint(medium){
+  .server-msg{
+    @include rem('font-size', 1.7rem);
+  }
+}
+/* FROM 1200 */
+@include breakpoint(large){
+  .server-msg{
+    @include rem('font-size', 1.8rem);
+  }
+
+}
+
+
+
+
+

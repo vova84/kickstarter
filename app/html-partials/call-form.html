@@ -1,0 +1,32 @@
+<form class="call-form" action="">
+    <p class="mb-30">
+        <label class="inline" for="call-name">
+            Ваше имя
+        </label>
+        <input class="col-18-sm form-field inline" id="call-name" name="call-name" type="text"/>
+    </p>
+    <p class="mb-30">
+        <label class="inline" for="call-company">
+            Компания
+        </label>
+        <input class="col-19-sm form-field inline" id="call-company" name="call-company" type="text"/>
+    </p>
+    <p class="mb-30">
+        <label class="col-5-sm inline" for="call-phone">
+            Телефон
+        </label>
+        <input class="col-19-sm form-field inline" id="call-phone" name="call-phone" type="text"/>
+    </p>
+    <div data-server="error" class="server-msg server-error hide">
+        Нет ответа от сервера. Ошибка отправки сообщения.
+    </div>
+    <div data-server="success" class="server-msg server-success hide">
+        Данные успешно отправлены!
+    </div>
+    <div class="btn-container">
+        <div class="btn-wrap">
+            <button id="call-send" class="btn call-send">Отправить</button>
+            <div class="ajax-loader hide"></div>
+        </div>
+    </div>
+</form>
